@@ -3,96 +3,82 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/csshref="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+
   </head>
   <body>
-
 <!-- header -->
+  <header>
+  <div class="flex-container">
+    <div class="logo">
+      <img src="./resources/images/ic_home-colmar-academy.svg" alt="">
+      <span class="black">COLMAR</span><span class="gray">ACADEMY</span>
+    </div>
+    <nav class="desktop">
+      <ul>
+        <li><a href="#">On campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">For companies</a></li>
+        <li><a href="#">Sign in</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile">
+      <li><a href="#"><img src="./resources/images/ic_home-colmar-academy.svg"></a></li>
+      <li><a href="#"><img src="./resources/images/ic_onCampus-colmar-academy.svg"></a></li>
+      <li><a href="#"><img src="./resources/images/ic_online-colmar-academy.svg"></a></li>
+      <li><a href="#"><img src="./resources/images//ic_login-colmar-academy.svg"></a></li>
+    </nav>
+  </div>
+</header>
+  </body>
 
-    <header>
-      <div class="container">
-        <a href="./ic_home-colmar-academy.svg" class="logo"></a>
-          <span>Colmar Academy</span>
-        <nav class="desktop">
-          <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">For companies<a/></li>
-            <li><a href="#">Sign-in</a></li>
-          </ul>
-        </nav>
-        <nav class="mobile">
-          <ul>
-            <li><a href="#"><img src="./ic_home-colmar-academy.svg"></a></li>
-            <li><a href="#"><img src="./ic_onCampus-colmar-academy.svg"></a></li>
-            <li><a href="#"><img src="./ic_online-colmar-academy.svg"></a></li>
-            <li><a href="#"><img src="./ic_login-colmar-academy.svg"></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <!-- main container -->
 
- <!-- main content -->
-    <div class="Main-container">
+  <div class="flex-container">
 
-      <!-- learn section -->
+    <!-- learn section -->
 
-      <div class="container">
-        <div class="books">
+      <div class="flex-container">
+        <div class="learn">
           <div class="image-container">
-            <img src="./bannercolmaracademy.jpg" alt="">
+            <img src="./resources/images/banner.jpg" alt="">
           </div>
-          <div class="content">
-            <h1>Learn Something new everyday</h1>
+          <div class="content-learn">
+            <h1>Learn something new everyday</h1>
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <div class="button">Start here</div>
           </div>
-          <div class="button">Start here</div>
         </div>
       </div>
 
-      <!-- practice section -->
-
-        <div class="container">
-          <div class="learning-section">
-            <div id="about">
-              <div class="image-container">
-                <img src="./information-main-colmar-academy.jpg" alt="">
-              </div>
-              <div class="content-read">
-                <h1>It doesn't hurt to keep practicing</h1>
-                <p>"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo lectus, nec consequat neque.  Sed non accumsan urna.  Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-                <p>Emanuel, Sr Strategist at Hiring.com</p>
-              </div>
-            <div id="orientation">
-              <div class="image-container">
-                <img src="./information-orientation-colmar-academy.jpg" alt="">
-              </div>
-              <div class="dates">
-                <h2>Orientation date</h2>
-                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                <a href="#">Read more</a>
-              </div>
+      <div class="flex-container">
+        <div class="practicing">
+          <div class="image-container">
+            <img src="./resources/images/information-main-colmar-academy.jpg" alt="">
+          </div>
+          <div class="content-practicing">
+            <h1>It doesn't hurt to keep practicing</h1>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo lectus, nec consequat neque.  Sed non accumsan urna.  Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <h4>Emanuel, Sr Strategist at Hiring.com</h4>
+          </div>
+          <div class="flex-container items">
+            <div class="item">
+              <img src="./resources/images/information-orientation-colmar-academy.jpg" alt="">
+              <span><h2>Orientation date</h2></span>
+              <span><p>Tue 10/11 & Wed 10/12: 8am-3pm</p></span>
+              <a href="#">Read more</a>
             </div>
-            <div id="about-campus">
-              <div class="image-container">
-                <img src="./information-campus-colmar-academy.jpg" alt="">
-              </div>
-              <div class="campus">
-                <h2>Our campus</h2>
-                <p>Find which campus is close by you</p>
-                <a href="#">Read more</a>
-              </div>
-              <div id="lecture">
-                <div class="image-container">
-                  <img src="./information-guest-lecture-colmar-academy.jpg" alt="">
-                </div>
-                <div class="guest">
-                  <h2>Our guest lecture</h2>
-                  <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                  <a href="#">Read more</a>
-                </div>
-              </div>
+            <div class="item">
+              <img src="./resources/images/information-campus-colmar-academy.jpg" alt="">
+              <span><h2>Our campus</h2></span>
+              <span><p>Find which campus is close by you</p></span>
+              <a href="#">Read more</a>
+            </div>
+            <div class="item">
+              <img src="./resources/images/information-guest-lecture-colmar-academy.jpg" alt="">
+              <span><h2>Our guest lecture</h2></span>
+              <span><p>Join a keynote with Oliver Sack about music in medical treatment</p></span>
+              <a href="#">Read more</a>
             </div>
           </div>
         </div>
@@ -100,122 +86,85 @@
 
       <!-- start learning section -->
 
-        <div class="container">
-          <div class="start">
-            <div class="engineer">
-              <div class="image-container">
-                <img srccourse-softwarecolmaracademy.jpg alt="">
-              </div>
-              <div class="software">
-                <h2>Software engineering</h2>
-                <h3>COURSES</h3>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
-              </div>
-            </div>
-            <div class="art">
-              <div class="image-container">
-                <img src="./course-computer-artcolmaracademy.jpg" alt="">
-              </div
-              <div class="computer">
-                <h2>Computer art</h2>
-                <h3>COURSES</h3>
-                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-              </div>
-            </div>
-            <div class="design">
-              <div class="image-container">
-                <img src="./course-designcolmaracademy.jpg" alt="">
-              </div>
-              <div class="experience">
-                <h2>Design</h2>
-                <h3>COURSES</h3>
-                <p>User Experience Design, User Research, Visual Design</p>
-              </div>
-            </div>
-            <div class="data">
-                <div class="image-container">
-                  <img src="./course-datacolmaracademy.jpg" alt="">
-                </div>
-                <div class="data-info">
-                  <h2>Data</h2>
-                  <h3>COURSES</h3>
-                  <p>Data Science, Big Data, SQL, Data Visualization</p>
-                </div>
-              </div>
-              <div class="business">
-                  <div class="image-container">
-                    <img src="./course-businesscolmaracademy.jpg" alt="">
-                  </div>
-                  <div class="more-business">
-                    <h2>Business</h2>
-                    <h3>COURSES</h3>
-                    <p>Product Deelopment, Business Development, Startup</p>
-                  </div>
-              </div>
-              <div class="marketing">
-                  <div class="image-container">
-                      <img src="./course-marketingcolmaracademy.jpg" alt="">
-                  </div>
-                  <div class="more-marketing">
-                    <h2>Marketing</h2>
-                    <h3>COURSES</h3>
-                    <p>Analytics, Content Marketing, Mobile Marketing</p>
-                  </div>
-              </div>
-
-              </div>
-            </div>
-
-      <!-- thesis section -->
-
-      <div class="container">
-        <div class="thesis">
-          <div class="exhibit">
-            <div class="video-container">
-              <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-              </video>
-            </div>
-            <div class="reimagine">
-                <h3>Reimagine urban</h3>
-                <p>"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo lectus, nec consequat neque.  Sed non Accumsan uma. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-            </div>
+      <div class="flex-container">
+        <div class="start-learning">
+          <div class="boxes">
+            <img src="./resources/images/course-softwarecolmaracademy.jpg" alt="">
+            <span><h2>Software engineering</h2></span>
+            <span><h3>COURSES</h3></span>
+            <p>Web Development, Mobile Development, iOT, APis</p>
           </div>
-          <div class="fisma">
-            <div class="image-container">
-              <img src="./thesis-fisma-colmar-academy.jpg" alt="">
-            </div>
-            <div class="prototype">
-              <h2>Fisma: Design and Prototype</h2>
-              <p>Designer showcase of new prototype product</p>
-            </div>
+          <div class="boxes">
+            <img src="./resources/images/course-computer-artcolmaracademy.jpg" alt="">
+            <span><h2>Computer art</h2></span>
+            <span><h3>COURSES</h3></span>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
-          <div class="now">
-            <div class="image-container">
-              <img src="./thesis-now-and-then-colmar-academy.jpg" alt="">
-            </div>
-            <div class="then">
-              <h2>Now and then</h2>
-              <p>Research study about New York</p>
-            </div>
+          <div class="boxes">
+            <img src="./resources/images/course-designcolmaracademy.jpg" alt="">
+            <span><h2>design</h2></span>
+            <span><h3>COURSES</h3></span>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+          <div class="boxes">
+            <img src="./resources/images/course-datacolmaracademy.jpg" alt="">
+            <span><h2>Data</h2></span>
+            <span><h3>COURSES</h3></span>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+          <div class="boxes">
+            <img src="./resources/images/course-businesscolmaracademy.jpg" alt="">
+            <span><h2>Business</h2></span>
+            <span><h3>COURSES</h3></span>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+          <div class="boxes">
+            <img src="./resources/images/course-marketingcolmaracademy.jpg" alt="">
+              <span><h2>Marketing</h2></span>
+              <span><h3>COURSES</h3></span>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
       </div>
-    </div>
-  </body>
 
-  <!-- footer section -->
+<!-- thesis exhibit section -->
 
-  <footer>
-    <div class="footer">
-      <span class="copyright">&copy; 2016 Colmar Academy. All rights reserved</span>
-    </div>
-    <div class="container">
-      <nav class="terms">
+      <div class="flex-container">
+        <div class="thesis">
+          <div class="video-container">
+            <video src="videofile.ogg" autoplay poster="posterimage.jpg"></video>
+            <span><h2>Reimagine urban</h2></span>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo lectus, nec consequat neque.  Sed non accumsan urna.  Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          </div>
+          <div class="contents">
+            <img src="./resources/images/thesis-fisma-colmar-academy.jpg" alt="">
+            <span><h2>Fisma: Design and Prototype</h2></span>
+            <p>Designer showcase of new prototype product</p>
+          </div>
+          <div class="contents">
+            <img src="./resources/images/thesis-now-and-then-colmar-academy.jpg" alt="">
+            <span><h2>Now and then</h2></span>
+            <p>Research study about New York</p>
+          </div>
+        </div>
+      </div>
+
+  <!-- footer -->
+
+    <footer>
+      <div class="footer">
+        <span class="copyright">&copy; 2016 Colmar Academy. All rights reserved</span>
+      </div>
+      <div class="container">
+      <nav class="footer-nav">
         <ul>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>
       </nav>
-    </div>
-  </footer>
+      </div>
+    </footer>
+  </div>
+
+</body>
 </html>
