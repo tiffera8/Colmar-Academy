@@ -77,12 +77,48 @@ header img {
 
  /* learn section */
 
-.learn .flex-container {
-  padding-top: 65px;
+.flex-container.learns {
+  padding-top: 64px;
   display: inline-flex;
+  background-color: tan;
+  background-size: cover;
+  flex-wrap: nowrap;
 }
 
 .learn .image-container {
-  width: 60%;
+  width: 210.813px;
+  height: 115.703px;
   padding: 2rem 1.5rem;
+  float: left;
+  object-fit: contain;
+}
+
+.content-learn {
+  align-items: center;
+  justify-content: center;
+}
+.content-learn h1 {
+  font-weight: bold;
+}
+
+.content-learn h2 {
+  font-weight: normal;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: black;
+  color: white;
+  border: 1px;
+  width: 5rem;
+  align-items: center;
+}
+
+/* practicing section */
+
+.practices {
+
 }
