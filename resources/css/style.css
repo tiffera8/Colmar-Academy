@@ -48,14 +48,7 @@ header .gray {
 
 .desktop li {
   display: inline-flex;
-  border-right-color: turquoise;
-  border-right-width: 1rem;
-  border-right-style: solid;
-
-}
-
-.desktop li:last-child a:after {
-  display: none;
+  padding-left: 1rem;
 }
 
 nav {
@@ -115,3 +108,55 @@ header img {
 }
 
 /* practicing section */
+
+#practices .flex-container {
+  display: block;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+#practices .practicing, #practices .hurting {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.image-container .practicing {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+  float: left;
+}
+
+#content-practicing {
+  align-items: center;
+  color: #696969;
+  line-height: .60;
+}
+
+#practices .hurting  {
+  display: block;
+  width: 100%;
+}
+
+.image-container .hurting {
+  display: flex;
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+  float: left;
+}
+
+.item {
+  display: inline-flex;
+}
+
+.items .hurting {
+  align-items: center;
+  width: 65%;
+  height: auto;
+  padding-left: 1rem;
+  flex-wrap: nowrap;
+}
