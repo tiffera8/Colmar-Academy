@@ -118,7 +118,6 @@ header img {
 
 #practices .practicing, #practices .hurting {
   display: flex;
-  width: 100%;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -138,7 +137,6 @@ header img {
 
 #practices .hurting  {
   display: block;
-  width: 100%;
 }
 
 .image-container .hurting {
@@ -170,8 +168,9 @@ header img {
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: #dcdcdc;
-  background-size: cover;
+  margin: 0 auto;
+  padding: 1rem 3.5rem;
+
 }
 
 #start, #start-learning {
@@ -180,16 +179,21 @@ header img {
   justify-content: center;
   align-self: center;
   padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: #dcdcdc;
+  background-size: cover;
 }
 
 .boxes {
   display: block;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
   padding: 1rem;
 }
 
-.boxes span, .boxes p {
+.boxes p {
+  text-align: left;
+}
+
+.boxes span {
   padding-top: 1rem;
   padding-left: 1rem;
   text-align: left;
