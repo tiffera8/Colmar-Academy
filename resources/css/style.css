@@ -130,9 +130,22 @@ header img {
 }
 
 #content-practicing {
-  align-items: center;
-  color: #696969;
+  align-items: left;
+  color: black;
   line-height: .60;
+}
+
+#content-practicing h5 {
+  padding-bottom: 2rem;
+}
+
+#content-practicing #hurt {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+#content-practicing #greek {
+  padding-bottom: 2rem;
 }
 
 #practices .hurting  {
@@ -179,33 +192,42 @@ header img {
 }
 
 #start-learning .boxes {
-  display: block;
+  display: inline-block;
   padding: 1rem;
-  text-align: left;
 }
 
 .boxes span {
-
   text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
   color: black;
   text-align: left;
   background-color: white;
-  width: 33%;
+
 }
 
-.boxes span h1 {
+.boxes .title {
   font-weight: bold;
+  font-size: 28px;
+  padding-top: 1rem;
 }
 
-.boxes span h2 {
+.boxes .courses  {
   padding-top: .5rem;
   padding-bottom: .5rem;
+  font-size: 16px;
+}
+
+.boxes .explain {
+  padding-bottom: 1.5rem;
+  font-size: 16px;
 }
 
 .boxes img {
   height: auto;
-  width: 33%;
+
 }
- .boxes img, span {
-   display: block;
- }
+
+.boxes img, span {
+  display: block;
+}
