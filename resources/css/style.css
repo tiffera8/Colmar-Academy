@@ -162,44 +162,35 @@ header img {
 
 /* start learning section */
 
-#start .flex-container {
-  display: block;
-  flex-wrap: wrap;
+#start {
   width: 100%;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   padding: 1rem 3.5rem;
-
-}
-
-#start, #start-learning {
-  margin-top: 2rem;
-  text-align: center;
-  justify-content: center;
-  align-self: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
   background-color: #dcdcdc;
   background-size: cover;
 }
 
-.boxes {
-  display: block;
-  padding: 1rem;
+.start-now {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-.boxes p {
+#start-learning .boxes {
+  display: block;
+  padding: 1rem;
   text-align: left;
 }
 
 .boxes span {
-  padding-top: 1rem;
-  padding-left: 1rem;
+
   text-align: left;
-  background-color: white;
   color: black;
   text-align: left;
+  background-color: white;
+  width: 33%;
 }
 
 .boxes span h1 {
@@ -213,6 +204,8 @@ header img {
 
 .boxes img {
   height: auto;
-  display: block;
-  padding
+  width: 33%;
 }
+ .boxes img, span {
+   display: block;
+ }
