@@ -225,9 +225,55 @@ header img {
 
 .boxes img {
   height: auto;
-
 }
 
 .boxes img, span {
   display: block;
+}
+
+
+/* thesis exhibit section */
+
+#thesises .flex-container {
+  display: block;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#thesises .thesis {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thesis .exhibit {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+.thesis h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.video-container .video {
+  display: block;
+  width: 60%;
+  height: auto;
+  padding-bottom: 1.5rem;
+  float: left;
+}
+
+.content-video {
+  align-items: left;
+  color: black;
+  line-height: .60;
 }
