@@ -80,6 +80,13 @@ header img {
   width: 100%;
 }
 
+#content-learn h1 {
+  text-align: left;
+  color: black;
+  font-weight: bold;
+
+}
+
 .learn .image-container {
   width: 60%;
   height: auto;
@@ -91,7 +98,14 @@ header img {
   display: inline;
   align-items: center;
   color: #696969;
-  line-height: .60;
+}
+
+.space {
+  padding-bottom: .75rem;
+}
+
+.spaces {
+  padding-top: .75rem;
 }
 
 .button {
@@ -110,7 +124,7 @@ header img {
 /* practicing section */
 
 #practices .flex-container {
-  display: block;
+  display: flex;
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
@@ -122,6 +136,10 @@ header img {
   flex-wrap: nowrap;
 }
 
+.practicing {
+  padding: 2rem 1.5rem;
+}
+
 .image-container .practicing {
   width: 60%;
   height: auto;
@@ -130,48 +148,56 @@ header img {
 }
 
 #content-practicing {
-  align-items: left;
+text-align: left;
   color: black;
-  line-height: .60;
 }
 
-#content-practicing h5 {
-  padding-bottom: 2rem;
-}
-
-#content-practicing #hurt {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-}
-
-#content-practicing #greek {
+#greek {
   padding-bottom: 2rem;
 }
 
 #practices .hurting  {
   display: block;
+  padding-bottom: 2rem;
+}
+
+.color {
+  background-color: #dcdcdc;
 }
 
 .image-container .hurting {
   display: flex;
   width: 35%;
   height: auto;
-  padding: 1rem;
   float: left;
 }
 
 .item {
   display: inline-flex;
+  padding: 1rem;
 }
 
-.items .hurting {
+.hurting {
+  border-left: solid 1px #dcdcdc;
+}
+
+.items {
   align-items: center;
+  text-align: left;
   width: 65%;
   height: auto;
   padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   flex-wrap: nowrap;
+  border-top: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-right: solid 1px #dcdcdc;
 }
 
+.items h2 {
+  font-weight: bold;
+}
 
 /* start learning section */
 
@@ -203,7 +229,6 @@ header img {
   color: black;
   text-align: left;
   background-color: white;
-
 }
 
 .boxes .title {
@@ -234,6 +259,20 @@ header img {
 
 /* thesis exhibit section */
 
+.exhibit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.exhibit h1 {
+  font-weight: bold;
+}
+
 #thesises .flex-container {
   display: block;
   align-items: center;
@@ -252,13 +291,6 @@ header img {
   align-items: center;
 }
 
-.thesis .exhibit {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-  }
-
 .thesis h1 {
   font-weight: bold;
   text-align: center;
@@ -273,7 +305,55 @@ header img {
 }
 
 .content-video {
-  align-items: left;
+  text-align: left;
   color: black;
   line-height: .60;
+}
+#thesises .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content .flex-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.contents-fisma .fisma {
+  align-items: center;
+  width: 65%;
+  height: auto;
+  padding-left: 1rem;
+  flex-wrap: nowrap;
+}
+
+.reimagine .flex-container {
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
+
+
+
+
+/* footer */
+
+.footer {
+  display: flex;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  border-top: solid .1rem #dcdcdc;
+  width: 100%;
+  font-size: 12px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 1.5rem;
 }
