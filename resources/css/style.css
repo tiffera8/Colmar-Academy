@@ -218,15 +218,15 @@ header img {
   padding: 1rem;
 }
 
-.boxes img, span {
+img, span .boxes {
   display: block;
 }
 
-.boxes img {
+img.boxes  {
   height: auto;
 }
 
-.boxes span {
+span.boxes {
   text-align: left;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
@@ -235,17 +235,17 @@ header img {
   background-color: white;
 }
 
-.boxes .title {
+.boxes.title {
   font-weight: bold;
   padding-top: 1rem;
 }
 
-.boxes .courses  {
+.boxes.courses  {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
 
-.boxes .explain {
+.boxes.explain {
   padding-bottom: 1.5rem;
 }
 
