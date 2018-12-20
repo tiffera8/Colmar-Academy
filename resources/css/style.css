@@ -15,6 +15,10 @@ body {
   overflow: hidden;
 }
 
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
 
 /* header */
 
@@ -66,99 +70,88 @@ header img {
 
  /* learn section */
 
- .flex-container .learn {
-   display: flex;
-   align-items: center;
-   padding-top: 64px;
-   background-color: #dcdcdc;
-   background-size: cover;
-   flex-wrap: nowrap;
-   width: 100%;
- }
-
- #content-learn h1 {
-   text-align: left;
-   color: black;
-   font-weight: bold;
-
- }
-
- .learn .image-container {
-   float: left;
-    width: 60%;
-    height: auto;
-    padding: 2rem 1.5rem;
-  }
-
- #content-learn {
-   display: inline;
-   align-items: center;
-   color: black;
- }
-
- .space {
-   padding-bottom: .75rem;
- }
-
- .spaces {
-   padding-top: .75rem;
- }
-
- .button {
-   display: flex;
-   justify-content: center;
-   padding-top: .5rem;
-   padding-bottom: .5rem;
-   background-color: black;
-   color: white;
-   border: 1px;
-   width: 18rem;
-   align-items: center;
-   margin-top: 1.5rem;
- }
-
-
-
-/* practicing section */
-
-#practices .flex-container  {
+.flex-container .learn {
   display: flex;
   align-items: center;
+  padding-top: 64px;
+  background-color: #dcdcdc;
+  background-size: cover;
   flex-wrap: nowrap;
-  border-left: solid 1px #dcdcdc;
+  width: 100%;
 }
 
-.practicing, .hurting{
-  display: block;
-  align-items: center;
-  flex-wrap: nowrap;
+#content-learn h1 {
+  text-align: left;
+  color: black;
+  font-weight: bold;
+
 }
 
-.image-container .practicing {
+.learn .image-container {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
   float: left;
 }
 
-.image-container img {
+#content-learn {
+  display: inline;
+  align-items: center;
+  color: #696969;
+}
+
+.space {
+  padding-bottom: .75rem;
+}
+
+.spaces {
+  padding-top: .75rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #696969;
+  color: white;
+  border: 1px;
+  width: 18rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+/* practicing section */
+#practices .practicing, #practices .hurting {
+  display: flex;
+  align-items: center;
+
+}
+
+#strong.image-container {
   padding: 2rem 1.5rem;
-  width: 60%;
+  float: left;
+}
+
+#strong .image-container img {
   height: auto;
+  width: 60%;
 }
 
 #content-practicing {
   text-align: left;
   color: black;
+  padding-left: 1.5rem;
 }
 
 #greek {
   padding-bottom: 2rem;
 }
 
-#practices .hurting  {
-  display: inline-block;
-  width: 40%;
-}
 
-.hurting {
+#practices .hurting {
+  display: block;
+  padding-bottom: 2rem;
   border-left: solid 1px #dcdcdc;
 }
 
@@ -167,23 +160,21 @@ header img {
 }
 
 .item .image-container {
-  height: auto;
-  width: 35%;
-}
-
-.item {
-  display: inline-block;
+  display: flex;
   float: left;
 }
 
-.item img {
+.item.image-container img {
   width: 35%;
+  height: auto;
   padding: 1rem;
 }
 
-.items .item {
-  display: flex;
+.item: {
+  display: inline-flex;
+  padding: 1rem;
 }
+
 .items {
   display: block;
   align-items: center;
@@ -191,9 +182,12 @@ header img {
   width: 65%;
   height: auto;
   padding-left: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   flex-wrap: nowrap;
+  border-top: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-right: solid 1px #dcdcdc;
 }
 
 .items h2 {
@@ -201,11 +195,11 @@ header img {
 }
 
 
+
 /* start learning section */
 
 #start {
-  width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 1rem 3.5rem;
   background-color: #dcdcdc;
   background-size: cover;
@@ -224,6 +218,16 @@ header img {
   padding: 1rem;
 }
 
+.boxes img, span {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.boxes img {
+  height: auto;
+}
+
 .boxes span {
   text-align: left;
   padding-top: 1rem;
@@ -235,28 +239,18 @@ header img {
 
 .boxes .title {
   font-weight: bold;
-  font-size: 28px;
   padding-top: 1rem;
 }
 
 .boxes .courses  {
   padding-top: .5rem;
   padding-bottom: .5rem;
-  font-size: 16px;
 }
 
 .boxes .explain {
   padding-bottom: 1.5rem;
-  font-size: 16px;
 }
 
-.boxes img {
-  height: auto;
-}
-
-.boxes img, span {
-  display: block;
-}
 
 
 /* thesis exhibit section */
