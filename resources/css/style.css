@@ -9,7 +9,6 @@ a {
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: 16px;
 }
 
 .image-container {
@@ -19,6 +18,7 @@ body {
 .image-container img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* header */
@@ -88,17 +88,17 @@ header img {
 
  }
 
- .learn .image-container {
+.learn .image-container {
+  float: left;
    width: 60%;
    height: auto;
    padding: 2rem 1.5rem;
-   float: left;
  }
 
  #content-learn {
    display: inline;
    align-items: center;
-   color: #696969;
+   color: black;
  }
 
  .space {
@@ -114,7 +114,7 @@ header img {
    justify-content: center;
    padding-top: .5rem;
    padding-bottom: .5rem;
-   background-color: #696969;
+   background-color: black;
    color: white;
    border: 1px;
    width: 18rem;
@@ -123,17 +123,18 @@ header img {
  }
 
 
+
 /* practicing section */
 
 #practices .flex-container  {
-  display: block;
+  display: flex;
   align-items: center;
   flex-wrap: nowrap;
   border-left: solid 1px #dcdcdc;
 }
 
 .practicing, .hurting{
-  display: inline-block;
+  display: block;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -158,21 +159,25 @@ header img {
 }
 
 #practices .hurting  {
-  display: block;
+  display: inline-block;
+  width: 40%;
+}
+
+.hurting {
+  border-left: solid 1px #dcdcdc;
 }
 
 .color {
   background-color: #dcdcdc;
 }
 
-.image-container .item {
-  display: flex;
+.item .image-container {
   height: auto;
-  width: 40%
+  width: 35%;
 }
 
 .item {
-  display: inline-flex;
+  display: inline-block;
   float: left;
 }
 
@@ -181,12 +186,11 @@ header img {
   padding: 1rem;
 }
 
-.hurting {
-  border-left: solid 1px #dcdcdc;
-  width: 40%;
+.items .item {
+  display: flex;
 }
-
 .items {
+  display: block;
   align-items: center;
   text-align: left;
   width: 65%;
@@ -201,12 +205,13 @@ header img {
   font-weight: bold;
 }
 
+
 /* start learning section */
 
 #start {
   width: 100%;
-  margin: 0;
-  padding: 1.5rem 2rem;
+  margin: 0 auto;
+  padding: 1rem 3.5rem;
   background-color: #dcdcdc;
   background-size: cover;
 }
@@ -219,7 +224,7 @@ header img {
   padding-top: 1rem;
 }
 
-#start-learning  {
+#start-learning .boxes {
   display: inline-block;
   padding: 1rem;
 }
@@ -235,16 +240,19 @@ header img {
 
 .boxes .title {
   font-weight: bold;
+  font-size: 28px;
   padding-top: 1rem;
 }
 
 .boxes .courses  {
   padding-top: .5rem;
   padding-bottom: .5rem;
+  font-size: 16px;
 }
 
 .boxes .explain {
   padding-bottom: 1.5rem;
+  font-size: 16px;
 }
 
 .boxes img {
