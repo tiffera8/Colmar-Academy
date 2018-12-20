@@ -15,11 +15,6 @@ body {
   overflow: hidden;
 }
 
-.image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /* header */
 
@@ -88,12 +83,12 @@ header img {
 
  }
 
-.learn .image-container {
-  float: left;
-   width: 60%;
-   height: auto;
-   padding: 2rem 1.5rem;
- }
+ .learn .image-container {
+   float: left;
+    width: 60%;
+    height: auto;
+    padding: 2rem 1.5rem;
+  }
 
  #content-learn {
    display: inline;
