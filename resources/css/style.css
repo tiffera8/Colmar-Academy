@@ -215,37 +215,39 @@ header img {
 
 #start-learning .boxes {
   display: inline-block;
-  padding: 1rem;
+  padding: 2rem;
 }
 
-img, span .boxes {
+
+.boxes img, span {
   display: block;
 }
 
-img.boxes  {
+.boxes img  {
   height: auto;
 }
 
-span.boxes {
+.boxes span {
   text-align: left;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   color: black;
   text-align: left;
   background-color: white;
+  padding-left: 1rem;
 }
 
-.boxes.title {
+.title {
   font-weight: bold;
   padding-top: 1rem;
 }
 
-.boxes.courses  {
+.courses  {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
 
-.boxes.explain {
+.explain {
   padding-bottom: 1.5rem;
 }
 
