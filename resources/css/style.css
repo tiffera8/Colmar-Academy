@@ -199,8 +199,10 @@ header img {
 /* start learning section */
 
 #start {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 1rem 3.5rem;
+  padding: 2rem 4.5rem;
   background-color: #dcdcdc;
   background-size: cover;
 }
@@ -213,28 +215,26 @@ header img {
   padding-top: 1rem;
 }
 
-#start-learning .boxes {
+.boxes {
   display: inline-block;
-  padding: 2rem;
-}
-
-
-.boxes img, span {
-  display: block;
-}
-
-.boxes img  {
-  height: auto;
+  flex-direction: column;
 }
 
 .boxes span {
-  text-align: left;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
+  display: block;
+  background-color: white;
   color: black;
   text-align: left;
-  background-color: white;
   padding-left: 1rem;
+}
+
+.boxes img, span {
+  width: 33%;
+}
+
+.boxes img  {
+  display: block;
+  height: auto;
 }
 
 .title {
@@ -242,7 +242,7 @@ header img {
   padding-top: 1rem;
 }
 
-.courses  {
+.courses {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -250,6 +250,9 @@ header img {
 .explain {
   padding-bottom: 1.5rem;
 }
+
+
+
 
 
 
