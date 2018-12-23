@@ -18,7 +18,7 @@ body {
 
 /* header */
 
-header .flex-container {
+header .container {
   display: flex;
   align-items: center;
   position: fixed;
@@ -28,7 +28,7 @@ header .flex-container {
   z-index: 1;
 }
 
-.flex-container .logo {
+.container .logo {
   display: flex;
   align-items: center;
 }
@@ -53,7 +53,7 @@ nav {
   padding-right: 1.5rem;
 }
 
-header img {
+.image-container img {
   height: 2rem;
   padding-left: 1.5rem;
 }
@@ -66,164 +66,171 @@ header img {
 
  /* learn section */
 
-.flex-container .learn {
-  display: flex;
-  align-items: center;
-  padding-top: 64px;
-  background-color: #dcdcdc;
-  background-size: cover;
-  flex-wrap: nowrap;
-  width: 100%;
+ .container .left-side {
+   display: flex;
+   align-items: center;
+   padding-top: 64px;
+   background-color: #dcdcdc;
+   background-size: cover;
+   flex-wrap: nowrap;
+   margin: 0;
 }
 
-#content-learn h1 {
-  text-align: left;
-  color: black;
-  font-weight: bold;
+ .content-learn h1 {
+   text-align: left;
+   color: black;
+   font-weight: bold;
 
-}
+ }
 
-.learn .image-container {
-  width: 60%;
-  height: auto;
-  padding: 2rem 1.5rem;
+ .left-side .image-container {
+   width: 60%;
+   height: auto;
+   margin: 0;
+
   float: left;
+ }
+
+ .left-side img {
+   float: left;
+   max-width: 60%;
+   height: auto;
+   padding-left: 1.5rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+ }
+
+  .content-learn {
+   align-items: center;
+   color: black;
+   float: left;
 }
 
-#content-learn {
-  display: inline;
-  align-items: center;
-  color: #696969;
-}
+ .space {
+   padding-bottom: .75rem;
+   padding-top: .75rem;
+ }
 
-.space {
-  padding-bottom: .75rem;
-}
+ .button {
+   display: flex;
+   justify-content: center;
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+   background-color: black;
+   color: white;
+   border: 1px;
+   width: 18rem;
+   align-items: center;
+   margin-top: 1.5rem;
+ }
 
-.spaces {
-  padding-top: .75rem;
-}
 
-.button {
-  display: flex;
-  justify-content: center;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  background-color: #696969;
-  color: white;
-  border: 1px;
-  width: 18rem;
-  align-items: center;
-  margin-top: 1.5rem;
-}
 
 /* practicing section */
-#practices .practicing, #practices .hurting {
+
+.side {
   display: flex;
   align-items: center;
-
+  margin: 0;
 }
 
-#strong.image-container {
-  padding: 2rem 1.5rem;
-  float: left;
+.extra .container {
+  display: flex;
 }
 
-#strong .image-container img {
-  height: auto;
+.image-container .left {
+  display: block;
   width: 60%;
 }
 
-#content-practicing {
-  text-align: left;
-  color: black;
-  padding-left: 1.5rem;
+.left img {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
 }
 
-#greek {
+.left h1 {
+  padding-bottom: 1.5rem;
+}
+
+.left h5 {
   padding-bottom: 2rem;
 }
 
-
-#practices .hurting {
-  display: block;
-  padding-bottom: 2rem;
-  border-left: solid 1px #dcdcdc;
-}
-
-.color {
-  background-color: #dcdcdc;
-}
-
-.item .image-container {
+.right {
   display: flex;
-  float: left;
+  flex-direction: row;
 }
 
-.item.image-container img {
+.right .container {
+  width: 40%;
+  padding-top: solid 1rem #dcdcdc;
+}
+
+.image-container .right {
+  width: 35%;
+  height: auto;
+}
+
+.right img {
   width: 35%;
   height: auto;
   padding: 1rem;
 }
 
-.item: {
-  display: inline-flex;
-  padding: 1rem;
-}
-
 .items {
-  display: block;
-  align-items: center;
-  text-align: left;
-  width: 65%;
-  height: auto;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  flex-wrap: nowrap;
-  border-top: solid 1px #dcdcdc;
-  border-bottom: solid 1px #dcdcdc;
-  border-right: solid 1px #dcdcdc;
+  display: inline-block;
 }
 
-.items h2 {
-  font-weight: bold;
+.keynote {
+  padding-bottom: .5rem;
 }
 
-
+.guest {
+  padding-bottom: .5rem;
+}
 
 /* start learning section */
 
-#start {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.start {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   background-color: #dcdcdc;
   background-size: cover;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .start-now {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-#start-learning .boxes {
+.boxes {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.boxes .white {
+  background-color: white;
+}
+
+.boxes .image-container {
   display: block;
-  float: left;
-  background: #dcdcdc;
-  width: 35%;
 }
 
-.boxes img, span {
-  display: block;
-  margin: 0;
-  width: 35%;
-}
-
-.boxes img  {
+.boxes img {
   height: auto;
+}
+
+.boxes h2, .boxes h3, .boxes p {
+  color: black;
+  text-align: left;
+  background-color: white;
 }
 
 .boxes .title {
@@ -231,7 +238,7 @@ header img {
   padding-top: 1rem;
 }
 
-.boxes .courses {
+.boxes .courses  {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -239,14 +246,6 @@ header img {
 .boxes .explain {
   padding-bottom: 1.5rem;
 }
-
-.boxes span {
-  background-color: white;
-  color: black;
-  text-align: left;
-  padding-left: 1rem;
-}
-
 
 
 
@@ -257,7 +256,6 @@ header img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -266,18 +264,13 @@ header img {
   font-weight: bold;
 }
 
-#thesises .flex-container {
-  display: block;
+.thesises .container {
+  display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  margin: 0;
-  padding-top: 2rem;
-  padding-left: 1.5rem;
-  padding-bottom: 2rem;
-  clear: left;
+  margin: 0 auto;
 }
 
-#thesises .thesis {
+.thesis {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -289,7 +282,15 @@ header img {
   text-align: center;
 }
 
-.video-container video {
+.vid .container {
+  display: block;
+  width: 60%;
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.image-container .video {
   display: block;
   width: 60%;
   height: auto;
@@ -298,39 +299,58 @@ header img {
 }
 
 .content-video {
-  display: block;
   text-align: left;
   color: black;
-  line-height: .60;
 }
 
-#thesises .flex-container {
+.content-video h2 {
+  padding-bottom: .5rem;
+}
+
+.content-video p {
+  padding-bottom: 2rem;
+}
+
+.overall .reimagine {
+  display:
+}
+
+.reimagine {
   display: flex;
-  flex-wrap: nowrap;
-  margin: 0;
 }
 
-.content .flex-container {
-  display: flex;
-  align-items: center;
+.container .reimagine {
+  display: block;
+  float: left;
+  width: 40%;
 }
 
-.contents-fisma .fisma {
+.image-container .reimagine {
+  width: 35%;
+  height: auto;
+}
+
+.reimagine img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.container .fisma {
+  display: block;
+}
+
+.content-fisma {
+  display: inline-block;
+}
+
+.content-fisma {
   align-items: center;
   width: 65%;
   height: auto;
   padding-left: 1rem;
   flex-wrap: nowrap;
 }
-
-.reimagine .flex-container {
-  display: inline-block;
-  float: left;
-  width: 40%;
-}
-
-
-
 
 /* footer */
 
