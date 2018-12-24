@@ -66,47 +66,55 @@ nav {
 
  /* learn section */
 
+.learning {
+  display: flex;
+  background-color: #dcdcdc;
+  background-size: cover;
+  align-items: center;
+}
+
  .container .left-side {
    display: flex;
+   width: 60%;
    align-items: center;
    padding-top: 64px;
-   background-color: #dcdcdc;
-   background-size: cover;
-   flex-wrap: nowrap;
    margin: 0;
+   flex-wrap: nowrap;
 }
 
  .content-learn h1 {
    text-align: left;
    color: black;
    font-weight: bold;
-
  }
 
  .left-side .image-container {
-   width: 60%;
-   height: auto;
-   margin: 0;
-
+   display: block;
   float: left;
+
  }
 
  .left-side img {
-   float: left;
-   max-width: 60%;
    height: auto;
-   padding-left: 1.5rem;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+   float: left;
+   padding: 2rem 1.5rem;
  }
 
-  .content-learn {
+ .container .right-side {
+   display: block;
    align-items: center;
-   color: black;
-   float: left;
+   width: 40%;
+   vertical-align: center;
 }
 
- .space {
+.content-learn {
+  color: black;
+  float: left;
+  padding-left: 1.5rem;
+  align-items: center;
+}
+
+  .space {
    padding-bottom: .75rem;
    padding-top: .75rem;
  }
