@@ -280,7 +280,6 @@ nav {
 
 .thesis {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -290,7 +289,13 @@ nav {
   text-align: center;
 }
 
-.vid .container {
+.overall .container {
+  display: inline-block;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .side-a {
   display: block;
   width: 60%;
   margin: 0;
@@ -319,46 +324,44 @@ nav {
   padding-bottom: 2rem;
 }
 
-.overall .reimagine {
-  display:
-}
-
-.reimagine {
-  display: flex;
-}
-
-.container .reimagine {
+.side-b {
   display: block;
-  float: left;
+}
+
+.container .side-b {
+  display: block;
   width: 40%;
 }
 
-.image-container .reimagine {
-  width: 35%;
-  height: auto;
-}
-
-.reimagine img {
-  width: 35%;
-  height: auto;
-  padding: 1rem;
-}
-
-.container .fisma {
+.image-container .side-b {
   display: block;
+  width: 35%;
 }
 
-.content-fisma {
-  display: inline-block;
-}
-
-.content-fisma {
-  align-items: center;
-  width: 65%;
+.side-b img {
   height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 1rem;
-  flex-wrap: nowrap;
 }
+
+.design {
+  display: inline-flex;
+  background-color: #dcdcdc;
+}
+
+.design-a {
+  display: inline-flex;
+}
+
+.content-fisma {
+  display: block;
+  align-self: center;
+  width: 65%;
+  padding-left: 1rem;
+}
+
+
 
 /* footer */
 
