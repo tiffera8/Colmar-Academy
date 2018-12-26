@@ -200,22 +200,39 @@ nav {
 
 /* start learning section */
 
-.start {
+.start-now {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.start .container {
+  display: flex;
+  margin: 0 auto;
   background-color: #dcdcdc;
   background-size: cover;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
+
 }
 
-.start-now {
-  text-align: center;
+.starter {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+}
+
+.starter h1 {
+  font-weight: bold;
+}
+
+.start-learning .container {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .boxes {
@@ -256,7 +273,6 @@ nav {
 }
 
 
-
 /* thesis exhibit section */
 
 .exhibit {
@@ -266,10 +282,6 @@ nav {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.exhibit h1 {
-  font-weight: bold;
 }
 
 .thesises .container {
@@ -325,7 +337,7 @@ nav {
 }
 
 .side-b {
-  display: block;
+  display: flex;
 }
 
 .container .side-b {
@@ -374,10 +386,12 @@ nav {
   font-size: 12px;
 }
 
-.footer-nav li {
+.footer nav li {
   display: inline-block;
+  padding-top: 1rem;
   list-style-type: none;
   text-decoration: none;
   font-size: 12px;
   padding-left: 1.5rem;
+  text-align: right;
 }

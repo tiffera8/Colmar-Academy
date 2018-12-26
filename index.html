@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
   </head>
   <body>
@@ -104,18 +104,21 @@
       <!-- start learning section -->
 
     <div class="container start">
-      <div class="container start-now">
-        <h1>Start Learning</h1>
+      <div class="container starter">
+        <div class="start-now">
+          <h1>Start Learning</h1>
+        </div>
       </div>
       <div class="container start-learning">
         <div class="boxes">
-          <div class="image-container white">
+          <div class="image-container">
             <img class="box" src="./resources/images/course-softwarecolmaracademy.jpg" alt="">
+          </div>
+          <div class="white">
             <h2 class="title">Software engineering</h2>
             <h3 class="courses">COURSES</h3>
             <p class="explain">Web Development, Mobile<br>Development, iOT, APis</p>
           </div>
-        </div>
         </div>
         <div class="boxes">
           <div class="image-container">
@@ -151,9 +154,11 @@
           <div class="image-container">
             <img class="box" src="./resources/images/course-businesscolmaracademy" alt="">
           </div>
-          <h2 class="title">Business</h2>
-          <h3 class="courses">COURSES</h3>
-          <p class="explain">Product Development, Business<br>Development, Startup</p>
+          <div class="white">
+            <h2 class="title">Business</h2>
+            <h3 class="courses">COURSES</h3>
+            <p class="explain">Product Development, Business<br>Development, Startup</p>
+          </div>
         </div>
         <div class="boxes">
           <div class="image-container">
@@ -167,6 +172,7 @@
         </div>
       </div>
     </div>
+
 
 
 <!-- thesis exhibit section -->
@@ -217,15 +223,13 @@
     <footer>
       <div class="footer">
         <span class="copyright">&copy; 2016 Colmar Academy. All rights reserved</span>
-      </div>
-      <div class="container">
-      <nav class="footer-nav">
+      <nav>
         <ul>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>
       </nav>
-      </div>
+    </div>
     </footer>
   </div>
 </body>
