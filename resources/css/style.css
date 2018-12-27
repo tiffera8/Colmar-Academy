@@ -205,18 +205,18 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .start .container {
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  margin: 0;
   background-color: #dcdcdc;
   background-size: cover;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
-
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .starter {
@@ -232,30 +232,26 @@ nav {
 .start-learning .container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .boxes {
-  display: flex;
-  padding-bottom: 2rem;
-}
-
-.boxes .white {
-  background-color: white;
-}
-
-.boxes .image-container {
   display: block;
+  background-color: white;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  width: 23rem;
 }
 
 .boxes img {
+  display: block;
   height: auto;
+  width: 23rem;
 }
 
 .boxes h2, .boxes h3, .boxes p {
   color: black;
   text-align: left;
-  background-color: white;
+  padding-left: 1rem;
 }
 
 .boxes .title {
