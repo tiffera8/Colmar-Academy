@@ -90,8 +90,7 @@ nav {
 
  .left-side .image-container {
    display: block;
-  float: left;
-
+   float: left;
  }
 
  .left-side img {
@@ -136,67 +135,77 @@ nav {
 
 /* practicing section */
 
-.side {
-  display: flex;
-  align-items: center;
-  margin: 0;
+ .side {
+   display: flex;
+   align-items: center;
+   margin: 0;
+ }
+
+.practice {
+  display: inline-flex;
 }
 
-.extra .container {
-  display: flex;
-}
-
-.image-container .left {
-  display: block;
-  width: 60%;
-}
-
-.left img {
-  width: 60%;
-  height: auto;
+.left {
   padding: 2rem 1.5rem;
+  width: 60%;
 }
 
-.left h1 {
-  padding-bottom: 1.5rem;
+.left .image-container {
+  display: block;
 }
 
-.left h5 {
-  padding-bottom: 2rem;
+ .left img {
+   height: auto;
 }
 
-.right {
-  display: flex;
-  flex-direction: row;
-}
+ .left h1 {
+   padding-bottom: 1.5rem;
+ }
 
-.right .container {
-  width: 40%;
+ .left h5 {
+   padding-bottom: 2rem;
+ }
+
+ .extra .container {
+   display: inline-flex;
+   flex-direction: row;
+   align-items: center;
+   width: 40%;
+ }
+
+ .lecture {
   padding-top: solid 1rem #dcdcdc;
-}
+ }
 
-.image-container .right {
+.right .image-container {
   width: 35%;
-  height: auto;
+
+}
+ .right img {
+   display: block;
+   height: auto;
+   padding: 1rem;
+ }
+
+ .items {
+   display: block;
+   width: 65%;
 }
 
-.right img {
-  width: 35%;
-  height: auto;
-  padding: 1rem;
+.right .items {
+  display: inline-flex;
+  align-items: center;
 }
 
-.items {
-  display: inline-block;
-}
+ .keynote {
+   padding-bottom: .5rem;
+ }
 
-.keynote {
-  padding-bottom: .5rem;
-}
+ .guest {
+   padding-bottom: .5rem;
+ }
 
-.guest {
-  padding-bottom: .5rem;
-}
+
 
 /* start learning section */
 
