@@ -143,7 +143,7 @@ nav {
    margin: 0;
  }
 
- .left.container {
+ .left .container {
    display: flex;
    padding: 2rem 1.5rem;
    width: 60%;
@@ -160,7 +160,6 @@ nav {
    max-width: 100%;
    height: auto;
    object-fit: contain;
-
  }
 
  .left h1 {
@@ -193,6 +192,8 @@ nav {
 
  .right .container, .right-a .container, .right-b .container {
    width: 40%;
+   display: flex;
+   align-items: center;
    height: auto;
  }
 
@@ -206,6 +207,7 @@ nav {
    width: 100%;
    height: auto;
    padding: 1rem;
+   object-fit: contain;
  }
 
  .items {
@@ -236,6 +238,8 @@ nav {
 .start .container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   background-color: #dcdcdc;
   background-size: cover;
