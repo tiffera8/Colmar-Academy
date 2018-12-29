@@ -90,7 +90,8 @@ nav {
 
  .left-side .image-container {
    display: block;
-   float: left;
+  float: left;
+
  }
 
  .left-side img {
@@ -135,77 +136,82 @@ nav {
 
 /* practicing section */
 
- .side {
-   display: flex;
-   align-items: center;
-   margin: 0;
- }
-
-.practice {
-  display: inline-flex;
+.side {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
-.left {
-  padding: 2rem 1.5rem;
+.left .container {
+  display: flex;
   width: 60%;
 }
 
-.left .image-container {
+.image-container .left {
   display: block;
 }
 
- .left img {
-   height: auto;
+.left img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1.5rem;
 }
 
- .left h1 {
-   padding-bottom: 1.5rem;
- }
+.left h1 {
+  padding-bottom: 1.5rem;
+}
 
- .left h5 {
-   padding-bottom: 2rem;
- }
+.left h5 {
+  padding-bottom: 2rem;
+}
 
- .extra .container {
-   display: inline-flex;
-   flex-direction: row;
-   align-items: center;
-   width: 40%;
- }
+.right, .right-a, .right-b {
+  display: flex;
+  flex-direction: row;
+}
 
- .lecture {
-  padding-top: solid 1rem #dcdcdc;
- }
+.right-b {
+  background-color: #dcdcdc;
+}
 
-.right .image-container {
+.right {
+  border-bottom: solid .1rem #dcdcdc;
+}
+
+.right-a {
+  border-top: solid .1rem #dcdcdc;
+}
+
+.right .container, .right-a .container, .right-b .container {
+  width: 40%;
+  height: auto;
+}
+
+.image-container .right, .image-container .right-a, .image-container .right-b {
   width: 35%;
-
-}
- .right img {
-   display: block;
-   height: auto;
-   padding: 1rem;
- }
-
- .items {
-   display: block;
-   width: 65%;
+  height: auto;
 }
 
-.right .items {
-  display: inline-flex;
-  align-items: center;
+.right img, .right-a img, .right-b img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
 }
 
- .keynote {
-   padding-bottom: .5rem;
- }
+.items {
+  display: inline-block;
+  width: 65%;
+}
 
- .guest {
-   padding-bottom: .5rem;
- }
+.keynote {
+  padding-bottom: .5rem;
+}
 
-
+.guest {
+  padding-bottom: .5rem;
+}
 
 /* start learning section */
 
