@@ -53,7 +53,7 @@ nav {
   padding-right: 1.5rem;
 }
 
-.image-container img {
+header .image-container img {
   height: 2rem;
   padding-left: 1.5rem;
 }
@@ -62,6 +62,46 @@ nav {
   display: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 480px;
+}
+
+.desktop {
+  display: none;
+}
+
+nav {
+  display: block;
+  text-align: center;
+  flex-grow: 1;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.mobile {
+  display: list-item;
+  list-style-type: none;
+}
+
+.mobile li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile img {
+  height: 2rem;
+}
+
+.logo span, .logo img {
+  display: none;
+  }
+}
 
 
  /* learn section */
@@ -133,6 +173,42 @@ nav {
    margin-top: 1.5rem;
  }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .learning {
+    display: block;
+    max-width: 480px;
+    clear: both;
+    justify-content: center;
+}
+
+  .container .left-side, .container .right-side {
+    display: block;
+    max-width: 480px;
+    object-fit: cover;
+  }
+
+  .left-side img {
+    padding: 2rem 1rem;
+  }
+
+  .space {
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .content-learn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
+  .button {
+    max-width: 16rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
 
 
  /* practicing section */
@@ -222,6 +298,46 @@ nav {
  .guest {
    padding-bottom: .5rem;
  }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .left .container, .left .image-container, .left img, .left h1, .left h5, .left p {
+      display: none;
+    }
+
+    .side, .items, .right, .right-a, .right-b, .right .container, .right-a .container, .right-b .container {
+      max-width: 480px;
+      display: block;
+    }
+
+    .image-container .right, .image-container .right-a, .image-container .right-b {
+      max-width: 480px;
+      justify-content: center;
+    }
+
+    .right img, .right-a img, .right-b img {
+      max-width: 480px;
+      object-fit: cover;
+    }
+
+    .right, .right-a {
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 4rem;
+    }
+
+    .right-b {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .items {
+      padding-left: 1rem;
+    }
+
+}
 
 
 /* start learning section */
