@@ -90,14 +90,15 @@ nav {
 
  .left-side .image-container {
    display: block;
-  float: left;
-
+   float: left;
  }
 
  .left-side img {
+   width: 100%;
    height: auto;
    float: left;
    padding: 2rem 1.5rem;
+   object-fit: contain;
  }
 
  .container .right-side {
@@ -134,84 +135,92 @@ nav {
 
 
 
-/* practicing section */
+ /* practicing section */
 
-.side {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
+ .side {
+   display: flex;
+   align-items: center;
+   margin: 0;
+ }
 
-.left .container {
-  display: flex;
-  width: 60%;
-}
+ .left.container {
+   display: flex;
+   padding: 2rem 1.5rem;
+   width: 60%;
+ }
 
-.image-container .left {
-  display: block;
-}
+ .left .image-container{
+   align-items: center;
+   flex-wrap: nowrap;
+   margin: 0;
+ }
 
-.left img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 2rem 1.5rem;
-}
+ .left img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   object-fit: contain;
 
-.left h1 {
-  padding-bottom: 1.5rem;
-}
+ }
 
-.left h5 {
-  padding-bottom: 2rem;
-}
+ .left h1 {
+   padding-bottom: 1.5rem;
+ }
 
-.right, .right-a, .right-b {
-  display: flex;
-  flex-direction: row;
-}
+ .left h5 {
+   padding-bottom: 2rem;
+ }
 
-.right-b {
-  background-color: #dcdcdc;
-}
+ .right, .right-a, .right-b {
+   display: flex;
+   flex-direction: row;
+ }
 
-.right {
-  border-bottom: solid .1rem #dcdcdc;
-}
+ .right-b {
+   background-color: #dcdcdc;
+   border-left: solid 1px #dcdcdc;
+ }
 
-.right-a {
-  border-top: solid .1rem #dcdcdc;
-}
+ .right {
+   border-bottom: solid 1px #dcdcdc;
+   border-left: solid 1px #dcdcdc;
+ }
 
-.right .container, .right-a .container, .right-b .container {
-  width: 40%;
-  height: auto;
-}
+ .right-a {
+   border-top: solid 1px #dcdcdc;
+   border-left: solid 1px #dcdcdc;
+ }
 
-.image-container .right, .image-container .right-a, .image-container .right-b {
-  width: 35%;
-  height: auto;
-}
+ .right .container, .right-a .container, .right-b .container {
+   width: 40%;
+   height: auto;
+ }
 
-.right img, .right-a img, .right-b img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 1rem;
-}
+ .image-container .right, .image-container .right-a, .image-container .right-b {
+   width: 35%;
+   height: auto;
+ }
 
-.items {
-  display: inline-block;
-  width: 65%;
-}
+ .right img, .right-a img, .right-b img {
+   display: block;
+   width: 100%;
+   height: auto;
+   padding: 1rem;
+ }
 
-.keynote {
-  padding-bottom: .5rem;
-}
+ .items {
+   display: inline-block;
+   width: 65%;
+ }
 
-.guest {
-  padding-bottom: .5rem;
-}
+ .keynote {
+   padding-bottom: .5rem;
+ }
+
+ .guest {
+   padding-bottom: .5rem;
+ }
+
 
 /* start learning section */
 
@@ -332,6 +341,7 @@ nav {
   height: auto;
   padding-bottom: 1.5rem;
   float: left;
+  object-fit: scale-down;
 }
 
 .content-video {
