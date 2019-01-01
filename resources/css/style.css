@@ -221,21 +221,20 @@ nav {
 
  .left .container {
    display: flex;
-   padding: 2rem 1.5rem;
    width: 60%;
  }
 
  .left .image-container{
    align-items: center;
    flex-wrap: nowrap;
-   margin: 0;
+   padding: 2rem 1.5rem;
  }
 
  .left img {
    display: block;
-   max-width: 100%;
+   width: 100%;
    height: auto;
-   object-fit: contain;
+   object-fit: scale-down;
  }
 
  .left h1 {
@@ -249,11 +248,13 @@ nav {
  .right, .right-a, .right-b {
    display: flex;
    flex-direction: row;
+   align-items: center;
  }
 
  .right-b {
    background-color: #dcdcdc;
    border-left: solid 1px #dcdcdc;
+   margin: 0;
  }
 
  .right {
@@ -289,6 +290,7 @@ nav {
  .items {
    display: inline-block;
    width: 65%;
+   padding-left: 1rem;
  }
 
  .keynote {
