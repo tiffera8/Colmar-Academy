@@ -176,19 +176,19 @@ nav {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .learning {
     display: block;
-    max-width: 480px;
+    max-width: 100%;
     clear: both;
     justify-content: center;
 }
 
   .container .left-side, .container .right-side {
     display: block;
-    max-width: 480px;
+    width: 100%;
     object-fit: cover;
   }
 
   .left-side img {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .space {
@@ -197,12 +197,16 @@ nav {
   }
 
   .content-learn {
+    margin-left: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    }
+  }
 
   .button {
-    max-width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 2rem;
@@ -307,36 +311,47 @@ nav {
     }
 
     .side, .items, .right, .right-a, .right-b, .right .container, .right-a .container, .right-b .container {
-      max-width: 480px;
+      width: 100%;
       display: block;
-    }
-
-    .image-container .right, .image-container .right-a, .image-container .right-b {
-      max-width: 480px;
       justify-content: center;
     }
 
+    .image-container .right, .image-container .right-a, .image-container .right-b {
+      width: 100%;
+      justify-content: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+    }
+
     .right img, .right-a img, .right-b img {
-      max-width: 480px;
       object-fit: cover;
     }
 
     .right, .right-a {
-      padding-top: 1rem;
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    .right {
+      padding-top: 1rem;
+    }
+
+    .right-a {
+      padding-top: 2rem;
     }
 
     .right-b {
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-top: 1rem;
+      padding-top: 2rem;
       padding-bottom: 2rem;
       background-color: white;
     }
 
     .items {
+      padding: top
       padding-left: 1rem;
     }
 
@@ -418,12 +433,12 @@ nav {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 .start-now {
   padding-top: 2rem;
-  max-width: 480px;
+  width: 100%;
   padding-bottom: 1rem;
 }
   .start .container {
     display: block;
-    max-width: 480px;
+    width: 100%;
     background-color: white;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -440,7 +455,6 @@ nav {
   padding-bottom: .5rem;
   padding-top: .5rem;
   max-width: 480px;
-
 }
 
 .boxes h3, .boxes p, .boxes img, .boxes .courses, .boxes .explain {
@@ -561,7 +575,7 @@ nav {
 
 .thesises .container {
   display: block;
-  max-width: 480px;
+  width: 480px;
 }
 
   .overall .container {
@@ -570,7 +584,7 @@ nav {
   }
 
   .container .side-a {
-    max-width: 480px;
+    width: 100%;
     object-fit: contain;
     padding-left: .5px;
     padding-right: .5px;
@@ -581,7 +595,7 @@ nav {
   }
 
   video {
-    max-width: 480px;
+    width: 480px;
     height: auto;
     padding-bottom: 1.5rem;
   }
