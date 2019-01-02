@@ -255,21 +255,33 @@ nav {
    padding-bottom: 2rem;
  }
 
+.left {
+  width: 100%;
+}
+
+.content {
+  padding-left: 1.5rem;
+}
+
+.extra {
+  width: 100%;
+}
+
  .right, .right-a, .right-b {
    display: flex;
    flex-direction: row;
    align-items: center;
  }
 
- #img1 {
+ #img1, #imga, #imgab {
    display: block;
  }
 
-  #img2 {
+  #img2, #imgb, #imgcd {
    display: none;
  }
 
- #blue {
+ #blue1, #bluea, #blueab {
    color: blue;
  }
 
@@ -335,11 +347,11 @@ nav {
       align-items: center;
     }
 
-    #img2 {
+    #img2, #imgb, #imgcd {
       display: block;
     }
 
-    #img1 {
+    #img1, #imga, #imgab {
       display: none;
     }
 
@@ -504,7 +516,7 @@ nav {
 
 .thesises .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
@@ -541,6 +553,10 @@ nav {
   padding-bottom: 1.5rem;
   float: left;
   object-fit: scale-down;
+}
+
+.videos {
+  width: 100%;
 }
 
 .content-video {
