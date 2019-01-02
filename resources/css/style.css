@@ -272,22 +272,17 @@ nav {
    padding-bottom: 1.5rem;
  }
 
- .hiring {
-   padding-bottom: 2rem;
-   vertical-align: bottom;
- }
-
-.left {
+ .left {
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 .content {
   padding-left: 1.5rem;
 }
 
-.hiring {
+p .content {
   padding-bottom: 2rem;
-  padding-top: 2.5rem;
 }
 
 .extra {
