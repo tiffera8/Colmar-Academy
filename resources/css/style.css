@@ -6,6 +6,8 @@ a {
   color: black;
 }
 
+
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -65,10 +67,10 @@ header .image-container img {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
 header .container {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: space-between;
-  max-width: 480px;
+  width: 100%;
 }
 
 .desktop {
@@ -76,11 +78,10 @@ header .container {
 }
 
 nav {
-  display: block;
+  display: inline-flex;
+  justify-content: space-between;
   text-align: center;
-  flex-grow: 1;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  flex-grow: 2;
 }
 
 .mobile {
@@ -92,10 +93,13 @@ nav {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-}
+    margin: 0;
+    }
 
 .mobile img {
   height: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .logo span, .logo img {
@@ -176,7 +180,7 @@ nav {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .learning {
     display: block;
-    max-width: 100%;
+    width: 100%;
     clear: both;
     justify-content: center;
 }
@@ -188,7 +192,8 @@ nav {
   }
 
   .left-side img {
-    padding: 2rem 1.5rem;
+    padding: 0px;
+    margin: 0;
   }
 
   .space {
@@ -197,9 +202,10 @@ nav {
   }
 
   .content-learn {
-    margin-left: 1rem;
+    background-color: #dcdcdc;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 2rem;
   }
 
   .button {
@@ -255,6 +261,18 @@ nav {
    align-items: center;
  }
 
+ #img1 {
+   display: block;
+ }
+
+  #img2 {
+   display: none;
+ }
+
+ #blue {
+   color: blue;
+ }
+
  .right-b {
    background-color: #dcdcdc;
    border-left: solid 1px #dcdcdc;
@@ -306,7 +324,7 @@ nav {
  }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .left .container, .left .image-container, .left img, .left h1, .left h5, .left p {
+    .left .container, .left .image-container, .left, .left img, .left h1, .left h5, .left p {
       display: none;
     }
 
@@ -314,45 +332,51 @@ nav {
       width: 100%;
       display: block;
       justify-content: center;
+      align-items: center;
     }
 
-    .image-container .right, .image-container .right-a, .image-container .right-b {
+    #img2 {
+      display: block;
+    }
+
+    #img1 {
+      display: none;
+    }
+
+    .right .image-container, .right-a .image-container, .right-b .image-container {
       width: 100%;
+      height: auto;
       justify-content: center;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 
     .right img, .right-a img, .right-b img {
       object-fit: cover;
     }
 
-    .right, .right-a {
+    .right, .right-a, .right-b {
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-bottom: 2rem;
     }
 
     .right {
       padding-top: 1rem;
+      border-bottom: none;
     }
 
-    .right-a {
-      padding-top: 2rem;
+    .right-a, .right-b {
+      padding-top: 4rem;
+      border-top: none;
     }
 
     .right-b {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 2rem;
       padding-bottom: 2rem;
       background-color: white;
     }
 
     .items {
-      padding: top
-      padding-left: 1rem;
+      margin-left: 1rem;
     }
 
 }
@@ -490,6 +514,7 @@ nav {
   align-items: center;
 }
 
+
 .thesis h1 {
   font-weight: bold;
   text-align: center;
@@ -498,7 +523,7 @@ nav {
 .overall .container {
   display: inline-block;
   align-items: center;
-  flex-wrap: wrap;
+
 }
 
 .container .side-a {
@@ -537,6 +562,7 @@ nav {
 
 .container .side-b {
   display: block;
+  margin-top: 0px;
   width: 40%;
 }
 
@@ -618,7 +644,7 @@ nav {
 
 .footer nav li {
   display: inline-block;
-  padding-top: 1rem;
+  margin-top: 1rem;
   list-style-type: none;
   text-decoration: none;
   font-size: 12px;
