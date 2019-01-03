@@ -468,13 +468,13 @@ p .content {
   background-color: white;
   margin-bottom: 2rem;
   margin-left: 2rem;
-  width: 23rem;
+  width: 30%;
 }
 
 .boxes img {
   display: block;
   height: auto;
-  width: 23rem;
+  width: 30%;
 }
 
 .boxes h2, .boxes h3, .boxes p {
@@ -617,15 +617,14 @@ p .content {
 .image-container .side-b {
   display: block;
   width: 35%;
-  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .side-b img {
   width: 100%;
   height: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
 }
 
 .design {
