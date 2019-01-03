@@ -91,7 +91,7 @@ header .container {
   display: inline-block;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
 }
 
 .desktop {
@@ -279,10 +279,11 @@ nav {
 
 .content {
   padding-left: 1.5rem;
+  padding-bottom: 2rem;
 }
 
-p .content {
-  padding-bottom: 2rem;
+.hiring {
+  padding-top: 6rem;
 }
 
 .extra {
@@ -371,11 +372,18 @@ p .content {
       display: none;
     }
 
-    .side, .items, .right, .right-a, .right-b, .right .container, .right-a .container, .right-b .container {
+    .side, .extra, .right, .right-a, .right-b {
       width: 100%;
+      height: auto;
       display: block;
+      margin: 0;
+      object-fit: cover;
       justify-content: center;
       align-items: center;
+    }
+
+    .right .container, .right-a .container, .right-b .container {
+      width: 100%;
     }
 
     #img2, #imgb, #imgcd {
@@ -388,14 +396,14 @@ p .content {
 
     .right .image-container, .right-a .image-container, .right-b .image-container {
       width: 100%;
-      height: auto;
       justify-content: center;
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
 
     .right img, .right-a img, .right-b img {
-      object-fit: cover;
+      width: 100%;
+      height: auto;
     }
 
     .right, .right-a, .right-b {
@@ -474,7 +482,7 @@ p .content {
 .boxes img {
   display: block;
   height: auto;
-  width: 30%;
+  width: 100%;
 }
 
 .boxes h2, .boxes h3, .boxes p {
@@ -505,7 +513,7 @@ p .content {
 }
   .start .container {
     display: block;
-    width: 100%;
+    max-width: 100%;
     background-color: white;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -521,7 +529,7 @@ p .content {
   background-color: #dcdcdc;
   padding-bottom: .5rem;
   padding-top: .5rem;
-  max-width: 480px;
+  width: 100%;
 }
 
 .boxes h3, .boxes p, .boxes img, .boxes .courses, .boxes .explain {
@@ -614,6 +622,12 @@ p .content {
   width: 40%;
 }
 
+.image-thesis {
+  width:35%;
+  height: auto;
+  padding: 1rem;
+}
+
 .image-container .side-b {
   display: block;
   width: 35%;
@@ -641,7 +655,6 @@ p .content {
   align-self: center;
   width: 65%;
   height: auto;
-  padding-left: 1rem;
 }
 
 .prototype {
@@ -693,7 +706,7 @@ p .content {
   padding-left: 1.5rem;
   padding-top: 1rem;
   border-top: solid .1rem #dcdcdc;
-  width: 100%;
+  max-width: 100%;
   font-size: 12px;
 }
 
